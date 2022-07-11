@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js" defer></script>
+
+    <title>Mario´s Game</title>
+</head>
+<body>
+    <div class="gameBoard">
+        <button class="resetButton" onclick="resetAll()"> Reset</button>
+
+        <div class="telaInicio">
+            <img src="img/Mario-gif.gif">
+            <div>
+                <h1>Welcome!!!</h1>
+                <div>
+                    <label for="name">User Name:</label>
+                    <input type="text" id="name" value="">
+                    <button onclick="saveName()">Go!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading">
+            <div class="point1"></div>
+            <div class="point2"></div>
+            <div class="point3"></div>
+        </div>
+
+        <div class="theGame">
+            <img src="img/you-win.gif" class="winner">
+            <img src="img/you-lose.gif" class="loser">
+
+            <div class="scoreBox">
+                <p>Pontos: <span id="score">0</span></p>
+                <div class="marioUser">
+                    <img src="img/super-mario-png4.webp" class="imgMarioUser">
+                    <p id="userName">User</p>
+                </div>
+            </div>
+
+            <img src="./IMG/clouds.png" class="clouds">
+            <img src="./IMG/pipe.png" class="pipe">
+            <img src="./IMG/mario.gif" class="mario">
+        </div>
+    </div>
+</body>
+
+</html>
